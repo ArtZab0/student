@@ -1,0 +1,128 @@
+/*
+  Name: Artem Zabarov
+  File: styles.css
+  Date: 3/31/2021
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+
+body {
+  background-color: #66ccff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for navigation area */
+
+nav {
+  background-color: #0099ff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li{
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/* Style rules for main content */
+header h1 {
+  text-align: center;
+}
+
+main {
+  padding: 2%;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style: square;
+  font-size: 1.25em;
+}
+
+.link {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#about {
+  text-align: left;
+}
+
+#members ul {
+  margin: 0;
+  text-align: center;
+}
+
+#members li{
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#members li a {
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+#members img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Style rules for footer content */
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  background-color: #0099ff;
+  color: #f6eee4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
