@@ -5,10 +5,18 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+/* Style rules for mobile viewport */
+
+
+/* Style rules to  hide tab-desk class */
+.tab-desk {
+  display: none;
 }
 
 /* Style rules for body and images */
@@ -22,6 +30,10 @@ img {
   display: block;
 }
 
+ul img {
+  max-width: 70%;
+}
+
 /* Style rules for navigation area */
 
 nav {
@@ -30,15 +42,15 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
   text-align: center;
 }
 
 nav li{
-  display: inline-block;
+  display: block;
   font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  border-top: 1px solid #e5e9fc;
 }
 
 nav li a {
@@ -49,16 +61,22 @@ nav li a {
   padding-left: 2em;
   padding-right: 2em;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+  background-color: #0066ff;
 }
 
 /* Style rules for main content */
 header h1 {
   text-align: center;
+  font-family: 'DM Serif Display', serif;
 }
 
 main {
   padding: 2%;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 main p {
@@ -72,15 +90,49 @@ main h3 {
 main ul {
   list-style: square;
   font-size: 1.25em;
+  
 }
 
-.link {
-  color: #f6eee4;
+.email-link {
+  background-color: #0099ff;
+  padding: 2%;
+  margin: 0 auto 20px auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.email-link a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  font-style: italic;
+  font-size: 1.2em;
+  display: block;
 }
 
+.tel-link {
+    background-color: #0099ff;
+    padding: 2%;
+    margin: 0 auto 20px auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+.map {
+  border: 5px solid #0099ff;
+  width: 95%;
+  height: 300px;
+  margin: 30px auto 20px auto;
+  display: block;
+}
+        
 #about {
   text-align: left;
 }
@@ -111,6 +163,9 @@ main ul {
   margin-bottom: 30px;
 }
 
+.round {
+  border-radius: 6px;
+}
 /* Style rules for footer content */
 
 footer {
