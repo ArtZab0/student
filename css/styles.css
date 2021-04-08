@@ -68,6 +68,10 @@ nav a:hover {
   background-color: #0066ff;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 /* Style rules for main content */
 header h1 {
   text-align: center;
