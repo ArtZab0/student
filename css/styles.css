@@ -5,7 +5,7 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul {
+body, header, nav, main, footer, img, h1, h3, ul, aside, section, article {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,7 +26,7 @@ body, header, nav, main, footer, img, h1, h3, ul {
 /* Style rules for body and images */
 
 body {
-  background-color: #66ccff;
+   background: linear-gradient(to right, #66ccff, #cceeff 80%);
 }
 
 img {
@@ -36,6 +36,10 @@ img {
 
 ul img {
   max-width: 70%;
+}
+
+#about ul {
+  margin-left: 20px;
 }
 
 /* Style rules for navigation area */
@@ -93,6 +97,34 @@ main ul {
   font-size: 1.25em; 
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+aside {
+  grid-column: 1 / span 2;
+  text-shadow: 4px 4px 10px #fff;
+}
+
+figure {
+  max-width: 400px;
+  margin: 2% auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none; 
+  box-shadow: 6px 6px 10px #000;
+}
+
+
+figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 
 .email-link {
   background-color: #0099ff;
@@ -106,7 +138,7 @@ main ul {
 .email-link a {
   color: #000;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.9em;
   display: block;
 }
 
@@ -122,8 +154,34 @@ main ul {
 .tel-link a {
     color: #000;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.9em;
     display: block;
+}
+
+.post {
+  float: right;
+  margin-right: 10px;
+}
+
+#feed {
+  width: 90%;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rcorners2 {
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid #0099ff;
+  padding: 10px; 
+  width: 90%;
+  min-height: 150px;  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 50px; 
 }
 
 .map {
@@ -183,26 +241,6 @@ footer a {
   text-decoration: none;
 }
 
-@media screen and (min-width:300px), print {
-
-/* Mobile Viewport: Style rules for main content */
-  .tel-link a {
-    font-size: 0.9em;
-  }
-
-  .email-link a {
-    font-size: 0.9em;
-  }
-
-  body {
-    background: linear-gradient(to right, #66ccff, #cceeff 80%);
-  }
-
-  ul {
-    margin-left: 30px;
-  }
-
-}
 
 @media screen and (min-width: 620px), print {
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
@@ -236,9 +274,10 @@ footer a {
     font-size: 1.1em;
   }
 
-  ul img {
+  figure {
   max-width: 35%;
   }
+
 
 }
 
@@ -258,6 +297,7 @@ footer a {
   nav li a:hover {
     color: #0099ff;
     background-color: #f6eee4;
+    opacity: 0.5;
   }
 
   /* Desktop Viewport: Style rules for main content */
@@ -270,17 +310,14 @@ footer a {
     font-size: 1.2em;
   }
 
-  .column {
-  float: left;
-  margin-left: ;
+    #feed {
+    width: 70%;
   }
 
-  .right {
-    width: 20%;
-  }
-
-  .left {
-    width: 80%;
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
   }
 
 }
