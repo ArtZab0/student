@@ -18,7 +18,7 @@ body, header, nav, main, footer, img, h1, h3, ul, aside, section, article {
 }
 
 /* Style rules to  hide tab-desk class */
-.tab-desk {
+.tab-desk, .desktop {
   display: none;
 }
 
@@ -225,6 +225,79 @@ figcaption {
 .round {
   border-radius: 6px;
 }
+
+/* Style rules for table */
+
+table {
+  border: 1px solid #0099ff;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 70%;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+th, td {
+  border: 1px solid #0099ff;
+  padding: 1%;
+}
+
+th {
+  background-color: #0099ff;
+  color: white;
+  font-size: 1.15em;
+}
+
+table tr:nth-child(odd) {
+  background-color: #33bbff;
+}
+
+/* Style rules for form */
+
+form h2 {
+  text-align: center;
+}
+
+fieldset, input, textarea {
+  margin-bottom: 2%;
+}
+
+fieldset {
+  border-color: #0099ff;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+#buttons {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form #submit, form #reset {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 2%;
+  background-color: #0099ff;
+  color: black;
+  font-size: 1.25em;
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+}
+
+
 /* Style rules for footer content */
 
 footer {
@@ -242,10 +315,11 @@ footer a {
 }
 
 
+
 @media screen and (min-width: 620px), print {
   /* Tablet Viewport: Show tab-desk class, hide mobile class */
 
-  .tab-desk {
+  .tab-desk, .desktop {
     display: block;
   }
 
@@ -278,6 +352,12 @@ footer a {
   max-width: 35%;
   }
 
+  /* Tablet Viewport: Style rule for form element */
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+  }
 
 }
 
@@ -318,6 +398,23 @@ footer a {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
+  }
+
+    /* Desktop Viewport: Style rules for form elements */
+
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  #buttons {
+    grid-column: 1 / span 2;
+    text-align: center;
   }
 
 }

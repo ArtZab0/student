@@ -32,6 +32,7 @@ Date: 3/9/2021
           <li><a href="about.html">About Us</a></li>
           <li><a href="members.html">Members</a></li>
           <li><a href="events.html">Events</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -44,11 +45,60 @@ Date: 3/9/2021
           <p class="tel-link tab-desk">(440) 777-7777</p>
           <p class="email-link"><a href="mailto:skiclub@fakemayfieldemail.org">skiclub@fakemayfieldemail.org</a></p>
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.505047236731!2d-81.46162878432612!3d41.53666079469038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831016dbe1bfa31%3A0x7c0aa8552a009aca!2sMayfield%20High%20School!5e0!3m2!1sen!2sus!4v1617194450022!5m2!1sen!2sus" loading="lazy" allowfullscreen></iframe>
+      </section>
 
+      <div id="form">
+
+				<h2>Complete the form below and we will contact you soon.</h2>
+
+				<form class="form-grid">
+
+					<fieldset>
+            <legend>Contact Information</legend>
+
+						<label for="fName">First Name</label>
+						<input type="text" name="fName" id="fName">
+
+						<label for="lName">Last Name</label>
+						<input type="text" name="lName" id="lName">
+
+						<label for="bName">Name of Business:</label>
+						<input type="text" name="bName" id="bName">
+
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email">
+
+						<label for="phone">Phone:</label>
+						<input type="tel" name="phone" id="phone">
+          </fieldset>
+
+					<fieldset>
+            <legend>Additional Information</legend>
+
+            <p>I would like more information about:</p>
+
+            <label for="question">Choose one:</label>
+            <select name="question" id="question" form="question">
+              <option name="info", id="vol" value="volunteering">Volunteering</option>
+              <option name="info", id="activities" value="activities">Activities</option>
+              <option name="info", id="equipment" value="equipment">Equipment</option>
+              <option name="info", id="other" value="other">Other, pelase specify below</option>
+            </select>
+
+						<label for="questions">What questions do you have?</label>
+            <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+					
+          </fieldset>
           
-    
-        </section>
-      </main>
+          <div id="buttons">
+            <input type="reset" id="reset" value="Reset" class="btn">
+            <input type="submit" id="submit" value="Submit" class="btn">
+          </div>
+
+				</form>
+			</div>
+
+    </main>
 
       <footer>
         <p><a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
