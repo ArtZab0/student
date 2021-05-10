@@ -29,7 +29,7 @@ body {
    background: linear-gradient(to right, #66ccff, #cceeff 80%);
 }
 
-img {
+img, video {
   display: block;
   max-width: 100%;
 }
