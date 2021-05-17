@@ -12,13 +12,12 @@ body, header, nav, main, footer, img, h1, h3, ul, aside, section, article {
 }
 
 /* Style rules for mobile viewport */
-
-.mobile {
+.mobile, .mobile-tablet {
   display: block;
 }
 
 /* Style rules to  hide tab-desk class */
-.tab-desk, .desktop {
+.tab-desk, .desktop, #menu-links {
   display: none;
 }
 
@@ -45,31 +44,29 @@ ul img {
 /* Style rules for navigation area */
 
 nav {
-  background-color: #0099ff;
+  background-color: #33bbff;
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
-
-nav li{
-  display: block;
-  font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  border-top: 1px solid #e5e9fc;
+ 
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;  
 }
-
-nav li a {
-  display: block;
-  color: #f6eee4;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+ 
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #66ccff;
 }
 
 
@@ -297,6 +294,23 @@ form #submit, form #reset {
   width: 40%;
 }
 
+button {
+  width: 10%;
+  margin: 20px 45%;
+  text-align: center;;
+}
+
+#rcorners2 p, #video1, #showLess1, #showLess2 {
+  display: none;
+}
+
+
+/* Style rule for CSS transform property */
+
+#about img:hover {
+  transform: scale(1.2);
+  margin: 50px;
+}
 
 /* Style rules for footer content */
 
@@ -323,7 +337,11 @@ footer a {
     display: block;
   }
 
-  .mobile {
+  .mobile, #mobile-nav {
+    display: none;
+  }
+
+  .menu-icon div {
     display: none;
   }
 
@@ -332,12 +350,23 @@ footer a {
   nav li {
     border-top: none;
     display: inline-block;
-    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
   }
 
   nav li a {
     padding: 0.5em;
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
   }
+
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+
 
   /* Tablet Viewport: Style rules for main content */
   .tel-link a {

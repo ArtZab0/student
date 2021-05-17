@@ -3,58 +3,75 @@
 Student Name: Artem Zabarov
 File Name: index.html
 Date: 3/9/2021
---> 
+-->
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-    <head>
-      <title>C2 In the Lab 3: Creating a Website for Student Clubs and Events</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
-      <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-    </head>
+<head>
+	<title>C2 In the Lab 3: Creating a Website for Student Clubs and Events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap"
+		rel="stylesheet">
 
-    <body>
-      
-      <header>
-        <h1>Ski Club</h1>
-      </header>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="members.html">Members</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="rentals.html">Rentals</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+<body>
+	<!-- Mobile Nav -->  
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
 
-      <!-- Use the main area to add the main content to the webpage -->
-      <main>
-        <section id="contact">
-          <h2> You can reach us at:</h2>
-          <p class="tel-link mobile"><a href="tel:4407777777">(440) 777-7777</a></p>
-          <p class="tel-link tab-desk">(440) 777-7777</p>
-          <p class="email-link"><a href="mailto:skiclub@fakemayfieldemail.org">skiclub@fakemayfieldemail.org</a></p>
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.505047236731!2d-81.46162878432612!3d41.53666079469038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831016dbe1bfa31%3A0x7c0aa8552a009aca!2sMayfield%20High%20School!5e0!3m2!1sen!2sus!4v1617194450022!5m2!1sen!2sus" loading="lazy" allowfullscreen></iframe>
-      </section>
+		<header>
+			<h1>Ski Club</h1>
+		</header>
 
-      <div id="form">
+		<nav class="tab-desk">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="members.html">Members</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="rentals.html">Rentals</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<!-- Use the main area to add the main content to the webpage -->
+		<main>
+			<section id="contact">
+				<h2> You can reach us at:</h2>
+				<p class="tel-link mobile"><a href="tel:4407777777">(440) 777-7777</a></p>
+				<p class="tel-link tab-desk">(440) 777-7777</p>
+				<p class="email-link"><a href="mailto:skiclub@fakemayfieldemail.org">skiclub@fakemayfieldemail.org</a>
+				</p>
+				<iframe class="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.505047236731!2d-81.46162878432612!3d41.53666079469038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831016dbe1bfa31%3A0x7c0aa8552a009aca!2sMayfield%20High%20School!5e0!3m2!1sen!2sus!4v1617194450022!5m2!1sen!2sus"
+					loading="lazy" allowfullscreen></iframe>
+			</section>
+
+			<div id="form">
 
 				<h2>Complete the form below and we will contact you soon.</h2>
 
 				<form class="form-grid">
 
 					<fieldset>
-            <legend>Contact Information</legend>
+						<legend>Contact Information</legend>
 
 						<label for="fName">First Name</label>
 						<input type="text" name="fName" id="fName">
@@ -72,40 +89,40 @@ Date: 3/9/2021
 						<input type="tel" name="phone" id="phone">
           </fieldset>
 
-					<fieldset>
-            <legend>Additional Information</legend>
+						<fieldset>
+							<legend>Additional Information</legend>
 
-            <p>I would like more information about:</p>
+							<p>I would like more information about:</p>
 
-            <label for="question">Choose one:</label>
-            <select name="question" id="question" form="question">
+							<label for="question">Choose one:</label>
+							<select name="question" id="question" form="question">
               <option name="info", id="vol" value="volunteering">Volunteering</option>
               <option name="info", id="activities" value="activities">Activities</option>
               <option name="info", id="equipment" value="equipment">Equipment</option>
               <option name="info", id="other" value="other">Other, pelase specify below</option>
             </select>
 
-						<label for="questions">What questions do you have?</label>
-            <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
-					
-          </fieldset>
-          
-          <div id="buttons">
-            <input type="reset" id="reset" value="Reset" class="btn">
-            <input type="submit" id="submit" value="Submit" class="btn">
+							<label for="questions">What questions do you have?</label>
+							<textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+
+						</fieldset>
+
+						<div id="buttons">
+							<input type="reset" id="reset" value="Reset" class="btn">
+							<input type="submit" id="submit" value="Submit" class="btn">
           </div>
 
 				</form>
 			</div>
 
-    </main>
+		</main>
 
-      <footer>
-        <p><a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
-        <p><a href="http://exceltecc-itp.org/" target="_blank">ITP Home</a></p>
-        <p>&copy; Copyright 2021. All Rights Reserved.</p>
-      </footer>
+		<footer>
+			<p><a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
+			<p><a href="http://exceltecc-itp.org/" target="_blank">ITP Home</a></p>
+			<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		</footer>
+  <script src="scripts/script.js"></script>
+</body>
 
-    </body>
-
-  </html>
+</html>

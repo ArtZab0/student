@@ -3,75 +3,95 @@
 Student Name: Artem Zabarov
 File Name: events.html
 Date: 4/26/2021
---> 
+-->
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-    <head>
-      <title>C2 In the Lab 3: Creating a Website for Student Clubs and Events</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
-    
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
-      <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-    </head>
+<head>
+	<title>C2 In the Lab 3: Creating a Website for Student Clubs and Events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap"
+		rel="stylesheet">
 
-    <body>
-      
-      <header>
-        <h1>Ski Club</h1>
-      </header>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="members.html">Members</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="rentals.html">Rentals</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <!-- Use the main area to add the main content to the webpage -->
-      <main>
+<body>
+	<!-- Mobile Nav -->
+	<!-- Mobile Nav -->  
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
 
-          <div id="feed">
-            
-            <section id="rcorners2">
-              <p>First event - new events page!</p>
-              <img src="images/cake.png" alt="cake">
-            </section>
+		<header>
+			<h1>Ski Club</h1>
+		</header>
 
-            <section id="rcorners2">
-              <audio controls>
-                <source src="media/audio.mp3">
-                <source src="media/audio.ogg">
-                <p>Your browser does not support audio</p>
-              </audio>
-              
-              <video controls poster="images/wildcat.png">
-                <source src="media/MayfieldHighSchool.mp4" type="video/mp4">
-                <source src="media/MayfieldHighSchool.webm" type="video/webm">
-                <track src="media/captions.vtt" kind="subtitles" srclang="en" label="English">
-                <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English">
-                
-                <p>Your browser does not support video</p>
-              </video>
+		<nav class="tab-desk">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="members.html">Members</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="rentals.html">Rentals</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- Use the main area to add the main content to the webpage -->
+		<main>
 
-            </section>
-          </div>
-        </main>
+			<div id="feed">
 
-      <footer>
-        <p><a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
-        <p><a href="http://exceltecc-itp.org/" target="_blank">ITP Home</a></p>
-        <p>&copy; Copyright 2021. All Rights Reserved.</p>
-      </footer>
+				<section id="rcorners2">
+					<p>First event - new events page!</p>
+					<img src="images/cake.png" alt="cake">
+          <button type="button" id="showMore1" onclick="showMore1()">Show more</button>
+          <button type="button" id="showLess1" onclick="showLess1()">Show less</button>
+        </section>
 
-    </body>
+					<section id="rcorners2">
+						<audio controls>
+							<source src="media/audio.mp3">
+							<source src="media/audio.ogg">
+							<p>Your browser does not support audio</p>
+						</audio>
 
-  </html>
+						<video controls poster="images/wildcat.png" id="video1">
+							<source src="media/MayfieldHighSchool.mp4" type="video/mp4">
+							<source src="media/MayfieldHighSchool.webm" type="video/webm">
+							<track src="media/captions.vtt" kind="subtitles" srclang="en" label="English">
+							<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English">
+
+							<p>Your browser does not support video</p>
+						</video>
+            <button type="button" id="showMore2" onclick="showMore2()">Show more</button>
+            <button type="button" id="showLess2" onclick="showLess2()">Show less</button>
+
+					</section>
+			</div>
+		</main>
+
+		<footer>
+			<p><a href="mailto:22arzabarov@mayfieldstudents.org">22arzabarov@mayfieldstudents.org</a></p>
+			<p><a href="http://exceltecc-itp.org/" target="_blank">ITP Home</a></p>
+			<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		</footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
